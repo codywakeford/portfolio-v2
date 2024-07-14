@@ -1,0 +1,69 @@
+html, body
+    margin: 0
+    padding: 0
+    overflow-x: hidden
+    scroll-behavior: smooth
+
+h1, h2, h3, h4, h5, h6, p
+    margin: 0
+    padding: 0
+
+.t
+    --size: 3
+
+h1, h2, h3, h4, h5, h6
+    color: $text-light
+    font-family: $header-font
+    font-weight: $header-weight
+
+h1
+    font-size: clamp(3rem, 2.5rem + 2vw, 5rem)
+
+h2
+    font-size: clamp(2.5rem, 2rem + 1.5vw, 4rem)
+
+h3
+    font-size: clamp(2rem, 1.75rem + 1.2vw, 3rem)
+
+h4
+    font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem)
+
+h5
+    font-size: clamp(1.25rem, 1rem + 0.8vw, 1.5rem)
+
+h6
+    font-size: clamp(1rem, 0.875rem + 0.7vw, 1rem)
+
+a, span, p, button, input, textarea, li
+    font-weight: $body-weight
+
+.anchor
+    font-size: 1.25rem
+    font-weight: $body-weight
+
+ul
+    padding-left: 0
+
+button
+    background: inherit
+    border: none
+    box-shadow: none
+    cursor: pointer
+    user-select: none
+    color: inherit
+
+    &:active
+        transform: translate(2px, 2px)
+
+*, *::before, *::after
+    box-sizing: border-box
+
+a
+    color: inherit
+    text-decoration: none
+
+    &:hover
+        text-decoration: none
+img
+    max-width: 100%
+    max-height: 100%
