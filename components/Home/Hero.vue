@@ -27,7 +27,7 @@
 </script>
 
 <style lang='sass' scoped>
-@import "../styles/variables"
+
 .socials-mpage
     max-width: 1800px !important
     position: fixed

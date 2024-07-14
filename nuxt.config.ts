@@ -8,15 +8,9 @@ export default defineNuxtConfig({
         css: {
             preprocessorOptions: {
                 sass: {
-                    additionalData: '@import "~/styles/main.sass" \n',
+                    additionalData: '@import "~/assets/styles/main.sass" \n',
                 },
             },
-        },
-    },
-
-    server: {
-        hmr: {
-            overlay: false,
         },
     },
 
