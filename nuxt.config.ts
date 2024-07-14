@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: false },
-    extends: "../nova-markup",
+    extends: "github:codywakeford/nova-markup",
     modules: ["@nuxt/fonts", "@nuxt/content", "@nuxt/image"],
 
     vite: {
