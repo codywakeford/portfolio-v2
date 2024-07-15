@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: false },
-    extends: "github:codywakeford/nova-markup",
+    extends: ["../nova-markup"],
     modules: ["@nuxt/fonts", "@nuxt/content", "@nuxt/image"],
 
     vite: {
@@ -13,6 +13,8 @@ export default defineNuxtConfig({
             },
         },
     },
-
+    app: {
+        pageTransition: { name: "page" },
+    },
     compatibilityDate: "2024-07-12",
 })

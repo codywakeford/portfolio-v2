@@ -1,10 +1,8 @@
 <template>
-    <Nav />
     <main>
 
         <BlogsSubHero />
         <BlogsBlogSection />
-        <Footer />
 
     </main>
 </template>

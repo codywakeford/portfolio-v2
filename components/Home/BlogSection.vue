@@ -24,14 +24,14 @@
                             </div>
                             <t class="minutes">{{ blog.readTime }} minutes</t>
 
-                            <anchor type="underline" :href="blog.url">Read More <Icon icon='material-symbols:arrow-forward-rounded' /></anchor>
+                            <nuxt-link :to="blog.url"><anchor type="underline" >Read More <Icon icon='material-symbols:arrow-forward-rounded' /></anchor></nuxt-link>
                         </cflex>
                     </card>
                     
                 </cards>
             </splitrow>
 
-            <anchor href="/blogs">View all blogs <Icon icon='material-symbols:arrow-forward-rounded' /></anchor>
+            <nuxt-link to="/blogs"><anchor >View all blogs <Icon icon='material-symbols:arrow-forward-rounded' /></anchor></nuxt-link>
             
         </mpage>
     </section>
@@ -40,20 +40,22 @@
 <script setup>
 import { Icon } from '@iconify/vue'
 const blogs = [
+
     {
-        title: "Title of the blog",
-        blurb: "This is a small description of the blog along with some other information.",
+        title: "Why I built a HTML Framework",
+        blurb: "I have built a framework that makes me 2x faster.",
         readTime: "10",
-        imageUrl: "/assets/images",
-        url: "/thisisthelocallink"
+        url: "/html-framwork",
+        imageUrl: "/assets/images/HTML.png",
     },
     {
-        title: "Title of the blog",
-        blurb: "This is a small description of the blog along with some other information.",
-        readTime: "10",
-        imageUrl: "/assets/images",
-        url: "/thisisthelocallink"
-    }
+        title: "The Importance of Responsive Design in Web Development",
+        blurb: "Understanding the critical role of responsive design in web development.",
+        readTime: "5",
+        url: "/responsive-design",
+        imageUrl: "/assets/images/responsive.jpg",
+    },
+
 ]
 </script>
 
@@ -66,9 +68,9 @@ const blogs = [
 
 .splitrow
     margin-block: 100px
-    gap: 100px
+    gap: 50px
     .left
-        flex: 2 1 100px
+        flex: 1 1 100px
 
     .right
         flex: 3 1 100px
@@ -81,6 +83,7 @@ const blogs = [
         z-index: 5
         position: relative
         background: $card-background
+        box-shadow: $card-shadow
         border-radius: 25px
         padding: 15px
         flex-direction: row
@@ -108,7 +111,9 @@ const blogs = [
             right: 25px
 
         img
-            width: 300px
+            object-fit: cover
+            object-position: center
+            width: 200px
             border-radius: 15px
 
 .anchor 

@@ -13,12 +13,12 @@
                     <div class="content">
                         <h5>{{ project.title }}</h5>
                         <t>{{ project.blurb }}</t>
-                        <anchor :href="project.url" type="underline">Visit <Icon icon='material-symbols:arrow-forward-rounded' /></anchor>
+                        <nuxt-link :to="project.url"><anchor type="underline">Visit <Icon icon='material-symbols:arrow-forward-rounded' /></anchor></nuxt-link>
                     </div>
                 </card>
             </cards>
             
-            <anchor href="/projects" class="more">View All Projects <Icon icon='material-symbols:arrow-forward-rounded' /></anchor>
+            <nuxt-link to="/projects"><anchor class="more">View All Projects <Icon icon='material-symbols:arrow-forward-rounded' /></anchor></nuxt-link>
 
         </mpage>
     </section>
@@ -57,9 +57,10 @@ const projects = [
     margin-block: 25px 75px
 
 .cards
-    gap: 50px
+    gap: 25px
     align-items: center
     justify-content: center
+    
     .card
         position: relative
         gap: 5px
@@ -70,6 +71,8 @@ const projects = [
         background: $card-background
         box-shadow: $card-shadow
 
+        h5
+            margin-bottom: 5px
         .content
             padding: 20px 25px
 

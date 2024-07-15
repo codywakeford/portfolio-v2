@@ -1,5 +1,4 @@
 <template>
-    <Nav />
     <main>
 
       <AboutSubHero />
@@ -8,7 +7,6 @@
       <AboutMyCommitment />
       <AboutMySkills />
       <Contact />
-      <Footer />
 
     </main>
 </template>

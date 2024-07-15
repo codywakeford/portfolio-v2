@@ -1,6 +1,8 @@
 <template>
     <binav :class="{'dark-bg' : background}">
-        <div class="logo">afw</div>
+        <div class="logo">
+            <a @click.prevent="navigateTo('#home')"><img src="/assets/cw-logo.png" alt="CW-Logo"></a>
+        </div>
 
         <rflex>
             <nuxt-link to="/">HOME</nuxt-link>
@@ -24,6 +26,7 @@ onMounted(() => {
 })
 </script>
 
+
 <style lang='sass' scoped>
 .binav
     position: fixed
@@ -31,6 +34,7 @@ onMounted(() => {
     top: 0
     left: 0
     right: 0
+    box-shadow: $card-shadow
 
     z-index: 100
     transition: background 0.5s
@@ -45,4 +49,8 @@ onMounted(() => {
         a
             font-weight: 400
             opacity: 0.8
+
+    .logo
+        img
+            width: 40px
 </style>

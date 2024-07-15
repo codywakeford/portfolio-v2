@@ -1,11 +1,9 @@
 <template>
     <main>
 
-        <Nav />
         <ProjectsSubHero />
         <ProjectsMyWork />
         <Contact />
-        <Footer />
 
     </main>
 </template>

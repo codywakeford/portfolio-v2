@@ -1,11 +1,9 @@
 ---
 title: "Emerging Dev Technologies"
-image: "/blog-posts/images/web-tech.png"
-slug: "emerging-web-technologies"
-blurb: "Stay ahead of the curve with these emerging web development technologies."
+description: "Stay ahead of the curve with these emerging web development technologies."
 ---
 
-![image](/blog-images/programming.jpg)
+![image](/blog-images/web-tech.png)
 
 ## Emerging Web Development Technologies in 2024
 

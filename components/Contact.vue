@@ -1,32 +1,37 @@
 <template>
 
     <mpage>
-        <div class="row">
-            <lheader>
+
+        <bigrid breakpoint="1200px">
+
+            <rheader breakpoint="1200px">
                 <h3>Got an idea in mind?</h3>
                 <p6>Let's see what we can create.</p6>
-            </lheader>
+            </rheader>
 
-            <rflex>
-                <form action="">
-                    <mheader>
-                        <h4>GET IN TOUCH</h4>
-                    </mheader>
+            <form  action="">
+                <mheader>
+                    <h4>GET IN TOUCH</h4>
+                </mheader>
 
-                    <label for="email">Email:</label>
-                    <input type="text" name="email">
+                <label for="email">Email:</label>
+                <input type="text" name="email">
 
-                    <label for="Subject">Subject:</label>
-                    <input type="text" name="subject">
+                <label for="Subject">Subject:</label>
+                <input type="text" name="subject">
 
-                    <label for="message">Message:</label>
-                    <input type="text" name="message">
+                <label for="message">Message:</label>
+                <input type="text" name="message">
 
-                    <btn type=''>Send</btn>
+                <btn type=''>Send</btn>
 
-                </form>
-            </rflex>
-        </div>
+            </form>
+        </bigrid>
+
+
+
+
+
     </mpage>
 
 </template>
@@ -36,12 +41,24 @@
 </script>
 
 <style lang='sass' scoped>
+
+
+
+
+
+
+
+
+
+
+
+
 .mpage
     padding-block: 150px 100px
 
-.row
+.bigrid
     display: grid
-    grid-gap: 25px
+    grid-gap: 75px
     grid-template-rows: auto 1fr
 
     form
@@ -53,11 +70,10 @@
 
         padding: 50px
         background: $card-background
+        box-shadow: $card-shadow
         width: 100%
         max-width: 450px
-        
-
-        
+    
         .mheader
             margin-block: 0px 50px
 
@@ -84,27 +100,20 @@
             border-radius: 2px
             border: 1px solid $text-dark
 
-    .lheader
+    .rheader
         text-align: center
         justify-content: center
         gap: 0px
 
-@media (min-width: 1200px)
-    .row
-        grid-template-rows: 1fr
-        grid-template-columns: 1fr 1fr
-        grid-gap: 100px
+@media (max-width: 1200px)
+    .second
+        margin-inline: auto
+        min-width: 500px
 
-    .lheader
-        text-align: right !important
-
-        
-    .rflex
-        justify-content: flex-end     
-        width: 100%   
-        
-        form
-            margin-right: auto
+@media (max-width: 500px)
+    .second
+        min-width: 300px
+        width: 100%
 
 
 </style>

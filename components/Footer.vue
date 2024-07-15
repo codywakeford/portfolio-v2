@@ -44,9 +44,9 @@
     position: relative
     z-index: 5
     justify-content: space-between  
-    padding-top: 50px
+    padding-top: 30px
     border-top: 1px solid $text-dark 
-    
+    height: 60px
     display: grid
     grid-template-columns: 1fr auto 1fr
 
@@ -57,6 +57,8 @@
     .center
         display: flex
         align-items: center
+        opacity: 01
+        font-weight: 300
 
     :last-child
         display: flex

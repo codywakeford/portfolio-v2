@@ -1,7 +1,7 @@
 <template>
     <section>
         <mpage>
-            <anchor href="/about" type="underline" class="learn-more">Learn More <Icon icon='material-symbols:arrow-forward-rounded' width="20" height="40"/></anchor>
+            <nuxt-link to="/about"><anchor  type="underline" class="learn-more">Learn More <Icon icon='material-symbols:arrow-forward-rounded' width="20" height="40"/></anchor></nuxt-link>
             <mheader>
                 <h3>About</h3>
                 <t class="grey-text">This is a small sentence about my self, this is what i want to write here. Let’s say 3 sentences just to show me people what i do and why. Erm hello.</t>
@@ -101,7 +101,7 @@ import { Icon } from '@iconify/vue'
     position: relative
     display: grid
     grid-template-columns: 300px 700px 300px
-    z-index: 3
+    z-index: 1
 
     .image
         height: 550px
@@ -133,6 +133,8 @@ import { Icon } from '@iconify/vue'
 
 
     .cflex
+        position: relative
+        z-index: 5
         justify-content: center
         gap: 20px
 
@@ -140,6 +142,8 @@ import { Icon } from '@iconify/vue'
             gap: 25px
 
 .mheader
+    position: relative
+    z-index: 5
     margin-block: 50px 100px
     h5
         padding-inline: 25px

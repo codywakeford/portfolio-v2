@@ -68,15 +68,11 @@ const projects = [
 <style lang='sass' scoped>
 .cards
     align-items: flex-start
-    gap: 50px
     justify-content: center
     flex-wrap: wrap
-
-
-.cards
     gap: 50px
     align-items: center
-    justify-content: center
+
     .card
         position: relative
         gap: 5px
@@ -99,6 +95,4 @@ const projects = [
             right: 50px
             bottom: 25px
             font-size: 1.3rem
-
-    
 </style>
