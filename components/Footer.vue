@@ -66,4 +66,28 @@
 
 .socials
     gap: 25px
+
+@media (max-width: 950px)
+    .footer    
+        grid-template-rows: 1fr 1fr 1fr
+        grid-template-columns: auto auto
+        grid-gap: 25px
+        padding-bottom: 25px
+        height: auto
+
+        .center
+            display: none
+
+@media (max-width: 400px)
+    .footer
+        grid-template-rows: 1fr 1fr 1fr
+        grid-template-columns: 1fr
+        height: 150px
+        grid-gap: 50px
+
+        :first-child
+            justify-content: center
+
+        :last-child
+            justify-content: center
 </style>

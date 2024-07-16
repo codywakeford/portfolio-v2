@@ -3,6 +3,7 @@
 
         <ProjectsSubHero />
         <ProjectsMyWork />
+        <AboutMyCommitment />
         <Contact />
 
     </main>

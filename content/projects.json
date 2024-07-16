@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Bean and Brew",
+        "slug": "bean-and-brew",
+        "blurb": "A local coffee shop website.",
+        "url": "https://bean-and-brew-e83be.firebaseapp.com/#/",
+        "imageUrl": "/assets/images/bean-and-brew.png",
+        "job": "Built from the ground up.",
+        "features": [
+            "3 page static website",
+            "Contact form",
+            "Custom admin panel for handling requests."
+        ]
+    },
+    {
+        "title": "Gravity Team",
+        "slug": "gravity-team",
+        "blurb": "A cutting edge crypto exchange investment team.",
+        "url": "https://gravity-team-d000f.web.app/",
+        "imageUrl": "/assets/images/gravity-team.png",
+        "job": "Built from the ground up.",
+        "features": [
+            "3 page static website",
+            "Contact form",
+            "Custom admin panel for handling requests."
+        ]
+    },
+    {
+        "title": "Brainwave.io",
+        "slug": "brainwave",
+        "blurb": "A software based landing page.",
+        "url": "https://brainwave-988b1.firebaseapp.com/",
+        "imageUrl": "/assets/images/brainwave.png",
+        "job": "Built from the ground up.",
+        "features": [
+            "3 page static website",
+            "Contact form",
+            "Custom admin panel for handling requests."
+        ]
+    },
+    {
+        "title": "Zeplin Architecture",
+        "slug": "zeplin-architecture",
+        "blurb": "A bridge engineering company website.",
+        "url": "https://architect-c47de.firebaseapp.com/#/",
+        "imageUrl": "/assets/images/zeplin-architecture.png",
+        "job": "Built from the ground up.",
+        "features": [
+            "3 page static website",
+            "Contact form",
+            "Custom admin panel for handling requests."
+        ]
+    }
+]

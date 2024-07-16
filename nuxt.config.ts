@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
     devtools: { enabled: false },
     extends: ["github:codywakeford/nova-markup#version-1.1.0"],
+    // extends: ["../nova-markup"],
     modules: ["@nuxt/fonts", "@nuxt/content", "@nuxt/image"],
 
     vite: {
@@ -17,4 +18,9 @@ export default defineNuxtConfig({
         pageTransition: { name: "page" },
     },
     compatibilityDate: "2024-07-12",
+    nitro: {
+        firebase: {
+            gen: 2,
+        },
+    },
 })

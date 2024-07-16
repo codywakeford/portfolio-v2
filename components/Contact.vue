@@ -43,18 +43,8 @@
 <style lang='sass' scoped>
 
 
-
-
-
-
-
-
-
-
-
-
 .mpage
-    padding-block: 150px 100px
+    padding-block: 50px 100px
 
 .bigrid
     display: grid
@@ -101,6 +91,8 @@
             border: 1px solid $text-dark
 
     .rheader
+        position: relative
+        z-index: 5
         text-align: center
         justify-content: center
         gap: 0px

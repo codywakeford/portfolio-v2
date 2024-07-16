@@ -10,10 +10,6 @@
                 <img src='/assets/images/' alt='' loading='lazy' />
 
                 <cflex>
-                    
-                    <t>
-                        From a young age, my curiosity and passion for creating led me to explore the world of programming. I dabbled in building games and basic websites, finding immense joy in implementing mathematical concepts to create game physics. These early projects ignited a spark within me, fueling my desire to learn and create.
-                    </t>
                     <t>
                         From a young age, my curiosity and passion for creating led me to explore the world of programming. I dabbled in building games and basic websites, finding immense joy in implementing mathematical concepts to create game physics. These early projects ignited a spark within me, fueling my desire to learn and create.
                     </t>

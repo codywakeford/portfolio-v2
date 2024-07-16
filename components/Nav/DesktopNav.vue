@@ -7,7 +7,7 @@
         <rflex>
             <nuxt-link to="/">HOME</nuxt-link>
             <nuxt-link to="/about">ABOUT</nuxt-link>
-            <nuxt-link to="/projects">PROJECTS</nuxt-link>
+            <nuxt-link to="/projects">PORTFOLIO</nuxt-link>
             <nuxt-link to="/blogs">BLOGS</nuxt-link>
         </rflex>
     </binav>

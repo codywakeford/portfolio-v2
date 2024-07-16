@@ -7,7 +7,7 @@
                 <t>I write about technology too</t>
             </mheader>
 
-            <splitrow>
+            <bigrid breakpoint="1300px">
                 <lheader>
                     <h4>Why I Write About Tech</h4>
                     <t>Writing about tech allows me to share my passion for innovation and the latest developments in the industry.</t>
@@ -29,7 +29,7 @@
                     </card>
                     
                 </cards>
-            </splitrow>
+            </bigrid>
 
             <nuxt-link to="/blogs"><anchor >View all blogs <Icon icon='material-symbols:arrow-forward-rounded' /></anchor></nuxt-link>
             
@@ -64,17 +64,34 @@ const blogs = [
     padding-block: 0 100px
 
 .mheader
-    margin-block: 50px 75px
+    gap: 0
+    margin-block: 25px 0px
 
-.splitrow
-    margin-block: 100px
-    gap: 50px
-    .left
-        flex: 1 1 100px
+.bigrid
+    margin-block: 75px
+    gap: 25px
+    height: 600px
 
-    .right
-        flex: 3 1 100px
-    
+    .first
+        height: 0px
+        display: none
+
+    &.broken
+        height: auto
+        grid-template-columns: 500px auto !important
+
+        .first
+            display: flex
+            height: auto
+            margin-block: auto
+
+        .lheader
+            position: relative
+            z-index: 5
+            
+            h4
+                margin-bottom: 10px
+
 .cards
     flex-direction: column
     gap: 25px
@@ -88,7 +105,7 @@ const blogs = [
         padding: 15px
         flex-direction: row
         gap: 25px
-
+        max-width: 750px
 
         .cflex
             gap: 30px
@@ -113,9 +130,14 @@ const blogs = [
         img
             object-fit: cover
             object-position: center
-            width: 200px
+            width: 300px
             border-radius: 15px
-
+@media (max-width: 768px )
+    .card
+        width: 100%
+        padding: 25px 50px !important
+        img
+            display: none
 .anchor 
     margin-left: auto
     z-index: 5
